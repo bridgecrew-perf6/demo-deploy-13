@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-deploy-container
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: demo-deploy
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: demo-deploy
+    spec:
+      containers:
+        - name: demo-deploy
+          image: hmhieu18/demo-deploy
+          ports:
+            - containerPort: 9000
+              protocol: TCP
