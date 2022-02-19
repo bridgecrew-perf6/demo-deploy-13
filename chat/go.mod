@@ -1,4 +1,4 @@
-module chat
+module github.com/hmhieu18/demo-deploy/chat
 
 go 1.17
 
