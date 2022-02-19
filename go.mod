@@ -1,4 +1,4 @@
-module github.com/hmhieu18/go-grpc-tutorial
+module github.com/hmhieu18/demo-deploy
 
 go 1.13
 

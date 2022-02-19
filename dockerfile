@@ -11,8 +11,8 @@ COPY go.sum ./
 RUN go mod download
 
 COPY *.go ./
-
-RUN go build -o /docker-gs-ping
+RUN go get github.com/hmhieu18/demo-deploy/chat 
+RUN go build -o /demo-deploy
 
 
 EXPOSE 8080
