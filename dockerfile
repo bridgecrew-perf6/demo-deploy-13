@@ -11,8 +11,9 @@ COPY go.sum ./
 RUN go mod download
 
 COPY *.go ./
-RUN go get github.com/hmhieu18/demo-deploy/chat 
+RUN go get .
+
 RUN go build -o /demo-deploy
 
-
-EXPOSE 8080
+ENTRYPOINT ["go", "run", "server.go", "-http-port=9000"]
+EXPOSE 9000

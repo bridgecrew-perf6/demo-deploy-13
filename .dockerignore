@@ -7,5 +7,5 @@
 .Dockerfile
 
 # ignore kubernetes deployment files
-.todo-deployment.yaml
-.todo-service.yaml
+.deployment.yaml
+.service.yaml
